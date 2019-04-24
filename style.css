@@ -1,0 +1,53 @@
+*:focus {
+    outline: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    'nav'
+    'container';
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 5fr;
+    justify-items: center;
+}
+
+.nav{
+    grid-area: 'nav';
+    display: inline-block;
+}
+
+.container {
+    grid-area: 'container';
+    display: grid;
+    width: 100%;
+    grid-template: repeat(16, 1fr) / repeat(16, 1fr);
+}
+
+.grid {
+    filter: brightness(110%);
+}
+
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-style: oblique;
+    margin-top: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px 5px;
+    height: 50px;
+    width: 150px;
+    background-color: palevioletred;
+}
+
+button:active{
+    background-color: lightsalmon;
+}
+
+
